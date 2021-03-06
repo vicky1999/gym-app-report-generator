@@ -9,6 +9,10 @@ app.use(express.json());
 
 const html=fs.readFileSync('template.html','utf-8');
 
+app.get("/",(req,res) => {
+    res.send("Hiii///");
+})
+
 app.get('/hello',(req,res) => {
     res.send("Hello World!");
 })
