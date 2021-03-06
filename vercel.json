@@ -1,10 +1,15 @@
 {
     "version": 2,
-    "functions": {
-        "index.js": {
-            "includeFiles": "./template.html"
+    "builds": [
+        {
+            "src": "./index.js",
+            "use": "@vercel/node"
+        },
+        {
+            "src": "./template.html",
+            "use": "@vercel/static"
         }
-    },
+    ],
     "routes": [
         {
             "src": "/(.*)",
