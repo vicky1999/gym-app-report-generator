@@ -9,6 +9,10 @@ app.get('/hello',(req,res) => {
     res.send("Hello World!");
 })
 
+app.get('/generate-pdf',(req,res) => {
+    res.send("PDF Generating!");
+})
+
 app.listen(80,'0.0.0.0',() => {
     console.log("Listening on port 5000");
 })
