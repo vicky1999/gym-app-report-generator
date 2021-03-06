@@ -173,6 +173,6 @@ app.get('/generate-pdf',(req,res) => {
     });
 })
 
-app.listen(3000,'0.0.0.0',() => {
+app.listen(80,'0.0.0.0',() => {
     console.log("Listening on port 5000");
 })
